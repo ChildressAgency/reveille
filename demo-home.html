@@ -20,7 +20,7 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/reveille-scripts.js"></script>
+  <!--<script type="text/javascript" src="js/reveille-scripts.js"></script>-->
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -30,13 +30,13 @@
 
 <body>
   <nav id="header-nav">
-    <div class="container">
-      <div class="masthead">
+    <div class="masthead">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <a href="#" class="radio-ad">Listen to our radio ad!</a>
           </div>
-          <div class="col-sm-3 hidden-xs">
+          <div class="col-sm-3 hidden-xs hidden-sm">
             <div class="social">
               <a href="#"><i class="fa fa-instagram"></i></a>
               <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -44,7 +44,7 @@
               <a href="#"><i class="fa fa-facebook-official"></i></a>
             </div>
           </div>
-          <div class="col-sm-6 hidden-xs">
+          <div class="col-sm-6 hidden-xs hidden-sm">
             <ul class="nav navbar-nav navbar-right">
               <li class="quote"><a href="#">Request a Quote</a></li>
               <li><a href="#">Client Portal</a></li>
@@ -54,69 +54,76 @@
           </div>
         </div>
       </div>
-      <div class="navbar-header">
-        <a href="#" class="header-logo"><img src="images/logo-white.png" class="img-responsive" alt="Reveille Systems, Inc. Logo" /></a>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="expanded" aria-controls="navbar">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div id="navbar" class="navbar-collapsed collapse">
-        <form>
-          <div class="input-group">
-            <input type="text" class="form-control input-sm" placeholder="Search..." />
-            <span class="input-group-btn">
-              <button class="btn btn-xs" type="button"><i class="fa fa-search"></i></button>
-            </span>
+    </div>
+    <div class="lower-menu">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="header-logo"><img src="images/logo-white.png" class="img-responsive" alt="Reveille Systems, Inc. Logo" /></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="expanded" aria-controls="navbar">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="navbar-form navbar-right">
+            <form>
+              <div class="input-group">
+                <input type="text" class="form-control input-sm" placeholder="Search..." />
+                <span class="input-group-btn">
+                  <button class="btn btn-sm" type="button"><i class="fa fa-search"></i></button>
+                </span>
+              </div>
+            </form>
           </div>
-        </form>
-        <ul class="nav nav-justified">
-          <li class="active"><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Markets</a></li>
-          <li><a href="#">Case Studies</a></li>
-          <li><a href="#">Providers</a></li>
-          <li><a href="#">Blog</a></li>
-          <li class="divider"></li>
-          <li class="quote visible-xs-block"><a href="#">Request a quote</a></li>
-          <li class="visible-xs-block"><a href="#">Client Portal</a></li>
-          <li class="visible-xs-block"><a href="#">Careers</a></li>
-          <li class="visible-xs-block"><a href="#">Contact Us</a></li>
-          <li class="visible-xs-block">
-            <div class="social">
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-            </div>
-          </li>
-        </ul>
+          <div class="clearfix"></div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Markets</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Providers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li class="divider"></li>
+            <li class="quote visible-xs-block visible-sm-block"><a href="#">Request a quote</a></li>
+            <li class="visible-xs-block visible-sm-block"><a href="#">Client Portal</a></li>
+            <li class="visible-xs-block visible-sm-block"><a href="#">Careers</a></li>
+            <li class="visible-xs-block visible-sm-block"><a href="#">Contact Us</a></li>
+            <li class="visible-xs-block visible-sm-block">
+              <div class="social">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
   <section id="hp-intro">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-sm-push-6">
+    <div class="container container-sm-height">
+      <div class="row row-sm-height">
+        <div class="col-sm-6 col-sm-push-6 col-sm-height">
           <h1>Reveille Systems, Inc</h1>
           <p>is a HUBZone Certified small business founded in 2010 and headquartered in Fredericksburg, VA. We specialize in information technology (IT) and management consulting services to both government and commercial clients. Reveille is defined as "a signal to rise or awaken," which is represented in our mission statement - "rising to serve your technology needs."</p>
-          <a href="#" class="btn-main"></a>
+          <a href="#" class="btn-main">About Us</a>
         </div>
-        <div class="col-sm-6 col-sm-pull-6">
+        <div class="col-sm-6 col-sm-pull-6 col-sm-height">
           <img src="images/man-typing-laptop.jpg" class="img-responsive center-block" alt="Man typing on laptop" />
         </div>
       </div>
     </div>
   </section>
   <section id="hp-why">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
+    <div class="container container-sm-height">
+      <div class="row row-sm-height">
+        <div class="col-sm-6 col-sm-height pull-left">
           <h1>Why Us</h1>
-          <hr />
-          <div class="content-offset-square">
+          <div class="content-offset-square-left">
+            <hr />
             <p>Reveille Systems delivers a combination of experience, integrity, performance, and partnerships to every client engagement. These principles ensure you receive maximum return on your investment, whether we are supporting a specific project or a long-term IT services contract. If you want the benefits of maximizing your financial investment and increasing organizational performance, then give us a call and let our team rise to serve your technology needs!</p>
             <a href="#" class="btn-main">Read More</a>
           </div>
@@ -125,19 +132,49 @@
     </div>
   </section>
   <section id="hp-services">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7 col-sm-push-5">
-          <h1>Our Services</h1>
-          <hr />
-          <div class="tab-content content-offset-square">
-            <div role="tabpanel" class="tab-pane fade in active" id="managed-services-&-it-support">
+    <div class="container container-sm-height">
+      <div class="row row-sm-height">
+        <div class="col-sm-5 col-sm-height">
+          <div class="row">
+            <div class="col-xs-6">
+              <!-- sanitize_title('Managed Services & IT Support') = managed-services-it-support -->
+              <a href="#managed-services-it-support" class="service-tab" aria-controls="managed-services-it-support" role="tab" data-toggle="tab">
+                <img src="images/woman-it-support-rep.jpg" class="img-responsive center-block" alt="IT support rep" />
+                <span>Managed Services &amp; IT Support</span>
+              </a>
+            </div>
+            <div class="col-xs-6">
+              <a href="#network-cybersecurity" class="service-tab" aria-controls="network-cybersecurity" role="tab" data-toggle="tab">
+                <img src="images/man-working-at-server.jpg" class="img-responsive center-block" alt="Man working at server" />
+                <span>Network &amp; Cybersecurity</span>
+              </a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-xs-6">
+              <a href="#cloud-computing" class="service-tab" aria-controls="could-computing" role="tab" data-toggle="tab">
+                <img src="images/server-room.jpg" class="img-responsive center-block" alt="Server room" />
+                <span>Cloud Computing</span>
+              </a>
+            </div>
+            <div class="col-xs-6">
+              <a href="#data-backup-recovery" class="service-tab" aria-controls="data-backup-recovery" role="tab" data-toggle="tab">
+                <img src="images/hard-drive-platter_141x141.jpg" class="img-responsive center-block" alt="Hard drive platter" />
+                <span>Data Backup &amp; Recovery</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7 col-sm-height">
+          <h1 class="text-right">Our Services</h1>
+          <div class="tab-content content-offset-square-right">
+            <hr />
+            <div role="tabpanel" class="tab-pane fade in active" id="managed-services-it-support">
               <h2>Managed Services &amp; IT Support</h2>
               <p>Reveille Systems offers scalable flat-fee pricing for Managed IT Services that give you the clarity and consistency for your yearly IT budget. We also serve as a virtual CIO for your business to manage IT investments, perform cost-benefit analysis, and ensure return on investment (ROI) on capital improvements for small businesses to medium businesses in Washington DC &amp; Fredericksburg VA areas.</p>
               <a href="#" class="btn-main">Read More</a>
               <a href="#" class="btn-main">All Services</a>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="network-&-cybersecurity">
+            <div role="tabpanel" class="tab-pane fade" id="network-cybersecurity">
               <h2>Network &amp; Cybersecurity</h2>
               <p>Reveille Systems takes a proactive approach to monitoring and managing network security within your technology environment. This proactive approach includes IT security audits and assessments to identify potential vulnerabilities before they compromise your network or data. With network security specialist compromises increasing in complexity and in sheer volume, a sound mitigation strategy and IT services partner is now critical to your successful prevention of security breaches.</p>
               <a href="#" class="btn-main">Read More</a>
@@ -149,7 +186,7 @@
               <a href="#" class="btn-main">Read More</a>
               <a href="#" class="btn-main">All Services</a>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="data-backup-&-recovery">
+            <div role="tabpanel" class="tab-pane fade" id="data-backup-recovery">
               <h2>Data Backup &amp; Recovery</h2>
               <p>One concern that keeps many customers awake at night - is my data backed up? If you don't know the answer to tha question, you may be at risk of losing critical information required to operate your business including customer details, financial records, or proprietary data. Let Reveille Systems assess your current and future needs for data backup and recovery, business continuity, and even disaster recovery.</p>
               <a href="#" class="btn-main">Read More</a>
@@ -157,46 +194,16 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-5 col-sm-pull-7">
-          <div class="row">
-            <div class="col-sm-6">
-              <!-- sanitize_title('Managed Services & IT Support') = managed-services-it-support -->
-              <a href="#managed-services-it-support" class="service-tab" aria-controls="managed-services-it-support" role="tab" data-toggle="tab">
-                <img src="images/woman-it-support-rep.jpg" class="img-responsive center-block" alt="IT support rep" />
-                <span>Managed Services &amp; IT Support</span>
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a href="#network-&-cybersecurity" class="service-tab" aria-controls="network-&-cybersecurity" role="tab" data-toggle="tab">
-                <img src="images/man-working-at-server.jpg" class="img-responsive center-block" alt="Man working at server" />
-                <span>Network &amp; Cybersecurity</span>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-sm-6">
-              <a href="#cloud-computing" class="service-tab" aria-controls="could-computing" role="tab" data-toggle="tab">
-                <img src="images/server-room.jpg" class="img-responsive center-block" alt="Server room" />
-                <span>Cloud Computing</span>
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a href="#data-backup-&-recovery" class="services-tab" aria-controls="data-backup-&-recovery" role="tab" data-toggle="tab">
-                <img src="images/hard-drive-platter_141x141.jpg" class="img-responsive center-block" alt="Hard drive platter" />
-                <span>Data Backup &amp; Recovery</span>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
   <section id="hp-testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
+    <div class="container container-sm-height">
+      <div class="row row-sm-height">
+        <div class="col-sm-6 col-sm-height">
           <h1>What Others Say</h1>
-          <hr />
-          <div class="content-offset-square">
+          <div class="content-offset-square-left">
+            <hr />
             <p>"Reveille Systems provides white glove service. Projects are well thought out and highly organized. Great communication paired with great technical expertise quite refreshing. Reveille Systems will help you raise the caliber of your business without a doubt."</p>
             <div class="testimonial-footer">
               <p class="author">Stephanie Chang</p>
@@ -207,7 +214,7 @@
             <a href="#" class="btn-main">Write A Review</a>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-sm-height">
           <img src="images/meeting-behind-glass.jpg" class="img-responsive center-block" alt="" />
         </div>
       </div>
@@ -281,7 +288,7 @@
         <div class="col-sm-7">
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane fade in active" id="backing-up-your-data">
-              <img src="images/hard-drive-platter-365x215.jpg" class="img-responsive center-block" alt="" />
+              <img src="images/hard-drive-platter_365x215.jpg" class="img-responsive center-block" alt="" />
               <div class="blog-summary">
                 <div class="summary-header">
                   <h2>Backing Up Your Data</h2>
@@ -305,7 +312,7 @@
               </div>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="laying-the-foundation-for-success">
-              <img src="images/featured-images-placeholder.png" class="img-responsive center-block" alt="" />
+              <img src="images/featured-image-placeholder.png" class="img-responsive center-block" alt="" />
               <div class="blog-summary">
                 <div class="summary-header">
                   <h2>Laying the Foundation for Success</h2>
@@ -362,7 +369,7 @@
           </div>
         </div>
         <div class="col-sm-7">
-          <img src="gmap-placeholder.jpg" class="img-responsive center-block" alt="" />
+          <img src="images/gmap-placeholder.jpg" class="img-responsive center-block" alt="" />
         </div>
       </div>
     </div>
