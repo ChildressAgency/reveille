@@ -443,6 +443,126 @@ footer a:hover{
   text-decoration:underline;
 }
 
+#mainContent{
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+#slogan{
+  padding-top:40px;
+  padding-bottom:40px;
+}
+.black-bg-callout{
+  max-width:525px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#5e0a0d;
+  text-align:center;
+  padding:100px 40px;
+}
+.black-bg-callout>h2{
+  font-size:24px;
+  font-family:"PT Sans", sans-serif;
+  color:#fff;
+  line-height:1.5em;
+  text-transform:uppercase;
+}
+
+#leadershipTeam{
+  padding-top:40px;
+  padding-bottom:40px;
+}
+#leadershipTeam>.container{
+  max-width:700px;
+}
+.content-offset-square-left.wide-square{
+  max-width:550px;
+}
+
+.team-member{
+  display:block;
+  margin-top:25px;
+  max-width:130px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.team-member>h4{
+  margin-top:5px;
+}
+.team-member-title{
+  font-weight:400;
+  font-style:italic;
+}
+#teamMemberBio .modal-content{
+  background-color:#f2f2f2;
+  padding:25px 40px;
+  border-radius:0;
+}
+#teamMemberBio .modal-header{
+  margin-top:-40px;
+  padding-top:0;
+  padding-bottom:0;
+  border:none;
+  float:left;
+}
+#teamMemberBio .close{
+  opacity:1;
+  font-size:34px;
+  font-weight:400;
+}
+#teamMemberBio .team-member-nav{
+  margin-top:20px;
+  text-align:right;
+  font-size:45px;
+}
+#teamMemberBio .team-member-nav>a{
+  margin-right:20px;
+}
+
+#quickFacts{
+  padding-top:40px;
+  padding-bottom:40px;
+  background-color:#5d2b29;
+  background-image:url(images/woman-working-at-computer.jpg);
+  background-repeat:no-repeat;
+  background-position:left top;
+  background-size:contain;
+}
+#quickFacts h1{
+  color:#fff;
+}
+#quickFacts .content-offset-square-right{
+  color:#fff;
+  background-color:transparent;
+}
+#quickFacts .content-offset-square-right>hr{
+  border-color:#fff;
+}
+#quickFacts .quick-facts>li{
+  min-height:60px;
+  margin-bottom:25px;
+  position:relative;
+}
+#quickFacts .quick-facts>li:after{
+  position:absolute;
+  content:"\025a1";
+  right:-40px;
+  top:-10px;
+  font-size:30px;
+}
+
+#whyChoose{
+  padding-top:40px;
+  padding-bottom:40px;
+}
+#whyChoose>.container{
+  max-width:700px;
+}
+#whyChoose dd{
+  margin-left:25px;
+  margin-bottom:15px;
+}
+
 
 @media (max-width:767px){
   .header-logo>img{
@@ -460,6 +580,9 @@ footer a:hover{
   }
   #hp-services .col-sm-7{
     padding-top:40px;
+  }
+  #quickFacts{
+    background-image:none;
   }
 }
 @media (min-width:768px){
@@ -486,6 +609,11 @@ footer a:hover{
   }
   footer .social{
     padding-left:5%;
+  }
+}
+@media (min-width:768px) and (max-width:991px){
+  #quickFacts{
+    background-position:-370px 0px;
   }
 }
 @media (max-width:991px){
@@ -537,5 +665,10 @@ footer a:hover{
 @media (min-width:992px){
   #navbar{
     float:right;
+  }
+}
+@media (min-width:992px) and (max-width:1199px){
+  #quickFacts{
+    background-position:-200px 0px;
   }
 }
