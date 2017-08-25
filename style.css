@@ -168,11 +168,32 @@ img.alignright{
   font-weight:700;
   text-transform:uppercase;
 }
+.dropdown-menu>li>a{
+  color:#fff;
+}
 .lower-menu .nav>li.active>a,
 .lower-menu .nav>li>a:hover,
-.lower-menu .nav>li>a:focus{
+.lower-menu .nav>li>a:focus,
+.lower-menu .nav .open>a,
+.lower-menu .nav .open>a:hover,
+.lower-menu .nav .open>a:focus{
   color:#4b1412;
   background-color:#fff;
+}
+
+.dropdown-toggle>.fa{
+  margin-left:5px;
+  -webkit-transition:-ms-transform .3s ease;
+  -webkit-transition:-webkit-transform .3s ease;
+  -webkit-transition:transform .3s ease;
+  transition:-ms-transform .3s ease;
+  transition:-webkit-transform .3s ease;
+  transition:transform .3s ease;  
+}
+.open .dropdown-toggle .fa{
+  -ms-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  transform:rotate(180deg);
 }
 
 .navbar-toggle{
@@ -563,6 +584,36 @@ footer a:hover{
   margin-bottom:15px;
 }
 
+.content-offset-square-left.extra-wide-square{
+  max-width:none;
+}
+
+#mainContent .content-offset-square-left img{
+  margin-bottom:15px;
+}
+.case-studies{
+  list-style:none;
+}
+.case-studies>li{
+  margin-bottom:5px;
+}
+.case-studies>li>a{
+  color:#fff;
+  font-weight:400;
+  padding:3px 10px;
+  display:block;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+  background-color:#4b1412;
+  border:1px solid #4b1412;
+}
+.case-studies>li>a:hover,
+.case-studies>li>a:focus{
+  background-color:#fff;
+  color:#4b1412;
+  text-decoration:none;
+}
+
 
 @media (max-width:767px){
   .header-logo>img{
@@ -661,10 +712,47 @@ footer a:hover{
     margin-left:15px;
     padding-bottom:25px;
   }
+  .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+  .nav>.divider{
+    height:1px;
+    margin:9px 0;
+    overflow:hidden;
+    background-color:#999;
+  }
 }
 @media (min-width:992px){
   #navbar{
     float:right;
+  }
+  .lower-menu .nav>li.dropdown{
+    position:static;
+  }
+  .dropdown-menu{
+    width:100%;
+    text-align:right;
+    column-count:3;
+    background-color:#2a0203;
+    border:none;
+    border-radius:0;
+    display:block !important;
+    visibility:hidden;
+    opacity:0;
+    -webkit-transition:visibility .3s ease, opacity .3s ease;
+    transition:visibility .3s ease, opacity .3s ease;
+    box-shadow:0 6px 12px #666
+  }
+  .open>.dropdown-menu{
+    visibility:visible;
+    opacity:1;
   }
 }
 @media (min-width:992px) and (max-width:1199px){
