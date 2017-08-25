@@ -488,6 +488,12 @@ footer a:hover{
   line-height:1.5em;
   text-transform:uppercase;
 }
+.black-bg-callout .social>a{
+  font-size:40px;
+}
+.black-bg-callout .social>a + a{
+  margin-left:25px;
+}
 
 #leadershipTeam{
   padding-top:40px;
@@ -614,6 +620,13 @@ footer a:hover{
   text-decoration:none;
 }
 
+#mainContent ul{
+  list-style:none;
+}
+#mainContent ul>li{
+  margin-bottom:15px;
+}
+
 
 @media (max-width:767px){
   .header-logo>img{
@@ -653,6 +666,9 @@ footer a:hover{
   }
   #locationInfo .contact-info{
     float:right;
+  }
+  #locationInfo.contact-page>.container{
+    max-width:700px;
   }
   .footer-divider{
     border-right:1px solid #fff;
