@@ -136,8 +136,15 @@ img.alignright{
 .masthead .nav>li.active>a,
 .masthead .nav>li>a:hover,
 .masthead .nav>li>a:focus{
+  background-color:transparent;
+  color:#fff;
+  font-weight:normal;
+}
+.masthead .nav>li.quote>a:hover,
+.masthead .nav>li.quote>a:focus{
   background-color:#fff;
   color:#4b1412;
+  font-weight:400;
 }
 
 .header-logo>img{
@@ -170,6 +177,7 @@ img.alignright{
 }
 .dropdown-menu>li>a{
   color:#fff;
+  font-weight:700;
 }
 .lower-menu .nav>li.active>a,
 .lower-menu .nav>li>a:hover,
@@ -179,7 +187,9 @@ img.alignright{
 .lower-menu .nav .open>a:focus,
 .dropdown-menu>.active>a, 
 .dropdown-menu>.active>a:focus, 
-.dropdown-menu>.active>a:hover{
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus{
   color:#fff;
   background-color:transparent;
   font-weight:400;
@@ -638,6 +648,49 @@ footer a:hover{
 }
 #mainContent ul>li{
   margin-bottom:15px;
+}
+
+.markets>li>span{
+  display:inline-block;
+  color:#fff;
+  background-color:#4b1412;
+  padding:1px 2px 2px 6px;
+  width:125px;
+}
+#markets{
+  padding-bottom:40px;
+}
+.market{
+  max-width:365px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:40px;
+}
+.market>hr{
+  border-color:#4b1412;
+  border-width:3px;
+  width:150px;
+  text-align:left;
+  margin-left:0;
+  margin-right:auto;
+  margin-top:10px;
+}
+.market>img{
+  margin-bottom:15px;
+}
+
+.solutions>li{
+  position:relative;
+}
+.solutions>li:before{
+  content:"\025a1";
+  position:absolute;
+  left:-20px;
+  top:-2px;
+  font-size:15px;
+}
+.vendors{
+  margin-top:40px;
 }
 
 
