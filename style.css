@@ -204,6 +204,28 @@ img.alignright{
   visibility:hidden;
 }
 
+.sub-menu{
+  column-count:3;
+  float:right;
+  margin-top:-15px;
+  text-align:right;
+  font-size:13px;
+}
+.sub-menu>li>a,
+.mobile-sub-menu>li>a{
+  color:#fff;
+  font-weight:400;
+}
+.sub-menu>li.active>a,
+.sub-menu>li>a:hover,
+.sub-menu>li>a:focus,
+.mobile-sub-menu>li.active>a,
+.mobile-sub-menu>li>a:hover,
+.mobile-sub-menu>li>a:focus{
+  font-weight:700;
+  text-decoration:none;
+}
+
 .dropdown-toggle>.fa{
   margin-left:5px;
   -webkit-transition:-ms-transform .3s ease;
@@ -648,7 +670,19 @@ footer a:hover{
 }
 #mainContent ul>li{
   margin-bottom:15px;
+  position:relative;
 }
+#mainContent ul>li:before{
+  content:"\025a1";
+  position:absolute;
+  left:-20px;
+  top:-2px;
+  font-size:15px;
+}
+#mainContent ul.case-studies>li:before{
+  content:"";
+}
+
 
 .markets>li>span{
   display:inline-block;
@@ -679,20 +713,27 @@ footer a:hover{
   margin-bottom:15px;
 }
 
-.solutions>li{
-  position:relative;
-}
-.solutions>li:before{
-  content:"\025a1";
-  position:absolute;
-  left:-20px;
-  top:-2px;
-  font-size:15px;
-}
 .vendors{
   margin-top:40px;
 }
 
+/* for radio ad modal - doesn't seem to help, consider removing */
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+  -webkit-transform:none;
+  -ms-transform:none;
+  transform:none;
+}
+
+.modal.in .modal-dialog {
+  -webkit-transform:none;
+  -ms-transform:none;
+  transform:none;
+}
+/* end radio ad modal */
 
 @media (max-width:767px){
   .header-logo>img{

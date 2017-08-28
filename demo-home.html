@@ -20,7 +20,7 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!--<script type="text/javascript" src="js/reveille-scripts.js"></script>-->
+  <script type="text/javascript" src="js/reveille-scripts.js"></script>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -34,7 +34,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-4 col-md-3">
-            <a href="#" class="radio-ad">Listen to our radio ad!</a>
+            <a href="#" class="radio-ad" data-toggle="modal" data-target="#radioAdModal" data-radio_ad="images/reveille-systems-testimonials.mp3">Listen to our radio ad!</a>
           </div>
           <div class="col-sm-3 hidden-xs hidden-sm">
             <div class="social">
@@ -72,13 +72,14 @@
               <div class="input-group">
                 <input type="text" class="form-control input-sm" placeholder="Search..." />
                 <span class="input-group-btn">
-                  <button class="btn btn-sm" type="button"><i class="fa fa-search"></i></button>
+                  <button class="btn btn-sm" type="submit"><i class="fa fa-search"></i></button>
                 </span>
               </div>
             </form>
           </div>
           <div class="clearfix"></div>
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
             <li class="active"><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Markets</a></li>
@@ -449,6 +450,18 @@
       <p>website created by <a href="#">The Childress Agency</a></p>
     </div>
   </footer>
+  <div class="modal fade" id="radioAdModal" tab-index:"-1" role="dialog" aria-labelledby="radioAdTitle">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X</span>
+        </button>
+        <video controls autoplay name="media" id="radioAd">
+          <source src="" type="audio/mpeg" />
+        </video>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
