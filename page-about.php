@@ -74,4 +74,32 @@
       </div>
     </div>
   </section>
+  <div class="modal fade" id="teamMemberBio" tab-index="-1" role="dialog" aria-labelledby="teamMemberName">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <button type="button" class="close hide-modal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X</span>
+        </button>
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="" id="teamMemberImage" class="img-responsive center-block" alt="" />
+          <!--
+            <div class="team-member-nav">
+              <a href="#" id="prevTeamMember"><i class="fa fa-angle-left"></i></a>
+              <a href="#" id="nextTeamMember"><i class="fa fa-angle-right"></i></a>
+            </div>
+          -->
+          </div>
+          <div class="col-sm-9">
+            <div class="modal-header">
+              <h2 id="teamMemberName" class="modal-title"></h2>
+              <span id="teamMemberTitle" class="team-member-title"></span>
+            </div>
+            <div class="clearfix"></div>
+            <div class="modal-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <?php get_footer(); ?>

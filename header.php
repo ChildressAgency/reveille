@@ -62,7 +62,7 @@
             <?php 
               if(is_page('services') || is_singular('service')){
                 echo '<li class="active"><a href="' . home_url('services') . '">Services</a></li>';
-                $services = new WP_Query('post_type' => 'service', 'posts_per_page' => -1, 'post_status' => 'publish');
+                $services = new WP_Query(array('post_type' => 'service', 'posts_per_page' => -1, 'post_status' => 'publish'));
                 global $post;
                 $post_slug = $post->post_name; // use this to test if current page is active
                 if($services->have_posts()){
@@ -85,7 +85,7 @@
             <?php
               if(is_page('case-studies') || is_singular('case_study')){
                 echo '<li class="active"><a href="' . home_url('case-studies') . '">Case Studies</a></li>';
-                $case_studies = new WP_Query('post_type' => 'case_study', 'posts_per_page' => -1, 'post_status' => 'publish');
+                $case_studies = new WP_Query(array('post_type' => 'case_study', 'posts_per_page' => -1, 'post_status' => 'publish'));
                 global $post;
                 $post_slug = $post->post_name;
                 if($case_studies->have_posts()){
@@ -117,7 +117,7 @@
           </ul>
           <?php
             if(is_page('services') || is_singular('service')){
-              $services = new WP_Query('post_type' => 'service', 'posts_per_page' => -1, 'post_status' => 'publish');
+              $services = new WP_Query(array('post_type' => 'service', 'posts_per_page' => -1, 'post_status' => 'publish'));
               global $post;
               $post_slug = $post->post_name; // use this to test if current page is active
               if($services->have_posts()){
@@ -133,7 +133,7 @@
               wp_reset_postdata();
             }
             elseif(is_page('case-studies') || is_singular('case_study')){
-              $case_studies = new WP_Query('post_type' => 'case_study', 'posts_per_page' => -1, 'post_status' => 'publish');
+              $case_studies = new WP_Query(array('post_type' => 'case_study', 'posts_per_page' => -1, 'post_status' => 'publish'));
               global $post;
               $post_slug = $post->post_name;
               if($case_studies->have_posts()){

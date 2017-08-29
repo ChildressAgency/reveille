@@ -1,6 +1,6 @@
 <?php
   $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-  $query = new WP_Query('posts_per_page' => 5, 'paged' => $paged);
+  $query = new WP_Query(array('posts_per_page' => 5, 'paged' => $paged));
   if($query->have_posts()): ?>
     <section id="hp-blog">
       <div class="container">

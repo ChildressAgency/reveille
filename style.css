@@ -366,13 +366,13 @@ img.alignright{
   text-align:center;
   text-transform:uppercase;
 }
-#hp-contactForm .contact-form{
+.contact-form{
   margin-top:60px;
   max-width:425px;
   margin-left:auto;
   margin-right:auto;
 }
-.contact-form .form-control{
+.form-control{
   border:none;
   border-radius:0;
   box-shadow:inset 0px 0px 10px -1px #000;
