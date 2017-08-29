@@ -336,62 +336,7 @@ function reveille_create_post_types(){
   register_post_type('case_study', $case_study_args);
 }
 
-function reveille_header_nav_fallback_menu(){ ?>
-  <ul class="nav navbar-nav navbar-right">
-    <li<?php if(is_front_page()){ echo ' class="active"'; } ?>><a href="<?php echo home_url(); ?>">Home</a></li>
-    <li<?php if(is_page('about')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('about'); ?>">About</a></li>
-    <li class="dropdown<?php if(is_page('services') || is_singular('service')){ echo ' active'; } ?>">
-      <a href="<?php echo home_url('services'); ?>">Services</a></li>
-    <li><a href="#">Markets</a></li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Case Studies<i class="fa fa-caret-down"></i></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Virginia Cardiovascular</a></li>
-        <li><a href="#">Commonwealth Internal Medicine</a></li>
-        <li><a href="#">Intelliware Systems, Inc.</a></li>
-        <li><a href="#">Universal Understanding, Inc.</a></li>
-        <li><a href="#">Goodall, Pelt, and  &amp; Carper</a></li>
-        <li><a href="#">Sutton &amp; Associates</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Providers</a></li>
-    <li><a href="#">Blog</a></li>
-    <li role="separator" class="divider"></li>
-    <li class="quote visible-xs-block visible-sm-block"><a href="#">Request a quote</a></li>
-    <li class="visible-xs-block visible-sm-block"><a href="#">Client Portal</a></li>
-    <li class="visible-xs-block visible-sm-block"><a href="#">Careers</a></li>
-    <li class="visible-xs-block visible-sm-block"><a href="#">Contact Us</a></li>
-    <li class="visible-xs-block visible-sm-block">
-      <div class="social">
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-      </div>
-    </li>
-  </ul>
-<?php }
-
-function reveille_get_mobile_menu_fields(){
-  $mobile_menu_fields = '<li role="separator" class="divider"></li>';
-  $mobile_menu_fields .= '<li class="quote visible-xs-block visible-sm-block"><a href="' . home_url('request-a-quote') . '">Request a quote</a></li>';
-  $mobile_menu_fields .= '<li class="visible-xs-block visible-sm-block"><a href="' . get_field('client_portal_link', 'option') . '">Client Portal</a></li>';
-  $mobile_menu_fields .= '<li class="visible-xs-block visible-sm-block"><a href="' . home_url('careers') . '">Careers</a></li>';
-  $mobile_menu_fields .= '<li class="visible-xs-block visible-sm-block"><a href="' . home_url('contact-us') . '">Contact Us</a></li>';
-  $mobile_menu_fields .= '<li class="visible-xs-block visible-sm-block"><div class="social">';
-    if($instagram){ 
-      $mobile_menu_fields .= '<a href="' . get_field('instagram', 'option') . '"><i class="fa fa-instagram"></i></a>';
-    }
-    if($linkedin){
-      $mobile_menu_fields .= '<a href="' . get_field('linkedin', 'option') . '"><i class="fa fa-linkedin"></i></a>';
-    }
-    if($twitter){
-      $mobile_menu_fields .= '<a href="' . get_field('twitter', 'option') . '"><i class="fa fa-twitter"></i></a>';
-    }
-    if($facebook){
-      $mobile_menu_fields .= '<a href="' .get_field('facebook', 'option') . '"><i class="fa fa-facebook-official"></i></a>';
-    }
-  $mobile_menu_fields .= '</div></li>';  
-
-  return $mobile_menu_fields;
+add_action('acf/init', 'reveille_acf_init');
+function reveille_acf_init(){
+	acf_update_setting('google_api_key', get_field('google_maps_api_key', 'option'));
 }

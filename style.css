@@ -330,6 +330,25 @@ img.alignright{
   padding-top:60px;
   padding-bottom:60px;
 }
+.testimonial-footer>.author{
+  font-weight:700;
+  color:#4b1412;
+  margin-bottom:0;
+}
+.testimonial-footer>.company{
+  font-style:italic;
+  margin-bottom:0;
+}
+#hp-testimonials .btn-main{
+  display:block;
+  width:140px;
+  margin-top:40px;
+  padding:4px 22px;
+  text-align:center;
+}
+#hp-testimonials .btn-main+.btn-main{
+  margin-top:15px;
+}
 
 #hp-contactForm{
   background-image:url(images/woman-typing.jpg);
@@ -445,6 +464,9 @@ img.alignright{
   padding-top:40px;
   padding-bottom:40px;
   color:#4b1412;
+}
+#locationInfo>.container{
+  max-width:700px;
 }
 #locationInfo .contact-info p>span{
   display:inline-block;
@@ -694,6 +716,9 @@ footer a:hover{
 #markets{
   padding-bottom:40px;
 }
+#mainContent ul.markets>li:before{
+  content:"";
+}
 .market{
   max-width:365px;
   margin-left:auto;
@@ -715,6 +740,18 @@ footer a:hover{
 
 .vendors{
   margin-top:40px;
+}
+#mainContent ul.vendors>li:before{
+  content:'';
+}
+
+.acf-map{
+  width:100%;
+  height:260px;
+  margin-top:60px;
+}
+.acf-map img{
+  max-width:inherit !important;
 }
 
 /* for radio ad modal - doesn't seem to help, consider removing */
@@ -770,12 +807,6 @@ footer a:hover{
     display:table-cell;
     float:none;
     vertical-align:middle;
-  }
-  #locationInfo .contact-info{
-    float:right;
-  }
-  #locationInfo.contact-page>.container{
-    max-width:700px;
   }
   .footer-divider{
     border-right:1px solid #fff;
