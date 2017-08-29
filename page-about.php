@@ -70,23 +70,7 @@
       <h2>Why Choose Us</h2>
       <div class="content-offset-square-left wide-square">
         <hr />
-        <p>Reveille Systems delivers a combination of experience, integrity, performance, and partnerships to every client engagement. These principles ensure you receive maximum return on your investment, whether we are supporting a specific project or a long-term IT services contract. If you want the benefits of maximizing your financial investment and increasing organizational performance, then give us a call and let our team rise to serve your technology needs!</p>
-        <dl>
-          <dt>EXPERIENCE</dt>
-            <dd>80+ years of combined management and leadership experience delivering management and technical solutions</dd>
-            <dd>Our team holds degrees in business and computer information systems, providing both the insight and ability to solve complex technology challenges</dd>
-            <dd>Certifications from CompTIA, Microsoft, Project Management Institute (PMI)</dd>
-            <dd>Information Technology Information Library (ITIL), and (ISC)2</dd>
-          <dt>INTEGRITY</dt>
-            <dd>With Federal market experience, we understand challenges with confidentiality and security of proprietary client information</dd>
-            <dd>Solutions compy with regulatory and accrediting authorities to ensure data protection and network security standards are met</dd>
-            <dd>We ensure members of our staff undergo a background check prior to employment and receive annual security awareness training.</dd>
-          <dt>PERFORMANCE</dt>
-            <dd>We repeatedly demonstrate our ability to deliver solutions that exceed client expectations</dd>
-            <dd>Rapid identification of customer requirements and development of solutions aligning to our customers' business strategies - resulting in increased productivity and efficiency</dd>
-          <dt>PARTNERSHIPS</dt>
-            <dd>We partner with industry-leading technology companies - Microsoft, Dell, HP, Lenovo, Symantec, Cisco, and Cbeyond - to offer a full complement of systems and data solutions. Cost effective solutions with technical support and training from each vendor.</dd>
-        </dl>
+        <?php the_field('why_choose_us_content'); ?>
       </div>
     </div>
   </section>

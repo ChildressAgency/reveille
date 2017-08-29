@@ -19,6 +19,10 @@ h4{
   margin-bottom:0;
   font-size:16px;
 }
+h5{
+  margin-bottom:0;
+  font-weight:700;
+}
 
 
 a{
@@ -652,9 +656,8 @@ footer a:hover{
 #whyChoose>.container{
   max-width:700px;
 }
-#whyChoose dd{
-  margin-left:25px;
-  margin-bottom:15px;
+#whyChoose ul{
+  list-style:none;
 }
 
 .content-offset-square-left.extra-wide-square{
