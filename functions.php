@@ -310,7 +310,7 @@ function reveille_create_post_types(){
 
   $case_study_labels = array(
     'name' => 'Case Studies',
-    'singular_name' => 'case Study',
+    'singular_name' => 'Case Study',
     'menu_name' => 'Case Studies',
     'add_new_item' => 'Add New Case Study',
     'search_items' => 'Search Case Studies',

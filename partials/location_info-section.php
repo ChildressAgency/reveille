@@ -4,9 +4,15 @@
       <div class="col-sm-5">
         <div class="contact-info">
           <h4>Reveille Systems, Inc.</h4>
-          <p><?php the_field('street_address', 'option'); ?><br /><?php the_field('address_2', 'option'); ?><br /><?php the_field('city_state_zip', 'option'); ?></p>
-          <p><span>P</span><?php the_field('phone_number', 'option'); ?><br /><span>F</span><?php the_field('fax_number', 'option'); ?></p>
-          <p><strong>MAILING ADDRESS</strong><br />Reveille Systems, Inc.<br /><?php the_field('po_box', 'option'); ?><br /><?php the_field('po_box_city_state_zip', 'option'); ?></p>
+          <p><?php the_field('hq_address_1', 'option'); ?><br /><?php the_field('hq_address_2', 'option'); ?><br /><?php the_field('hq_city_state_zip', 'option'); ?></p>
+          <p><span>P</span><?php the_field('hq_phone_number', 'option'); ?><br /><span>F</span><?php the_field('hq_fax_number', 'option'); ?></p>
+          <p><strong>MAILING ADDRESS</strong><br />Reveille Systems, Inc.<br /><?php the_field('mailing_address', 'option'); ?><br /><?php the_field('mailing_city_state_zip', 'option'); ?></p>
+          <?php if(have_rows('branch_offices', 'option')): while(have_rows('branch_offices', 'option')): the_row(); ?>
+            <p><strong><?php the_sub_field('branch_office_name'); ?></strong><br /><?php the_sub_field('branch_address_1'); ?><br /><?php echo get_sub_field('branch_address_2') ? get_sub_field('branch_address_2') . '<br />' : ''; ?><?php the_sub_field('branch_city_state_zip'); ?></p>
+            <?php if(get_sub_field('branch_phone_number')): ?>
+              <p><span>P</span><?php the_sub_field('branch_phone_number'); ?><?php echo get_sub_field('branch_fax_number') ? '<br /><span>F</span>' . get_sub_field('branch_fax_number') : ''; ?></p>
+            <?php endif; ?>
+          <?php endwhile; endif; ?>
           <?php get_template_part('partials/social', 'section'); ?>
         </div>
       </div>

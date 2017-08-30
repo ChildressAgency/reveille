@@ -9,7 +9,7 @@
             <?php if(get_field('intro_image')): ?>
               <img src="<?php the_field('intro_image'); ?>" class="img-responsive" alt="" />
             <?php endif; ?>
-            <?php the_field('intro_text'); ?>
+            <?php the_field('intro_content'); ?>
           </div>
           <div class="col-sm-5">
             <?php 

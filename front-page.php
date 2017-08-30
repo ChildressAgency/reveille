@@ -10,7 +10,9 @@
           <?php endif; ?>
         </div>
         <div class="col-sm-6 col-sm-pull-6 col-sm-height">
-          <img src="<?php the_field('intro_image'); ?>" class="img-responsive center-block" alt="" />
+          <?php if(get_field('intro_image')): ?>
+            <img src="<?php the_field('intro_image'); ?>" class="img-responsive center-block" alt="" />
+          <?php endif; ?>
         </div>
       </div>
     </div>

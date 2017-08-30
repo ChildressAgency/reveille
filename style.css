@@ -659,6 +659,9 @@ footer a:hover{
 #whyChoose ul{
   list-style:none;
 }
+#whyChoose ul>li{
+  margin-bottom:15px;
+}
 
 .content-offset-square-left.extra-wide-square{
   max-width:none;
