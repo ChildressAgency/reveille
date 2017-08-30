@@ -11,14 +11,14 @@
           <div class="col-sm-5">
             <img src="<?php the_field('intro_image'); ?>" class="img-responsive center-block" alt="" />
             <?php
-              $markets = get_rows('markets');
+              $markets = get_field('markets');
               $markets_count = count($markets);
               $half_markets_count = ceil($markets_count/2);
 
               if(!empty($markets)): ?>
                 <ul class="markets list-unstyled list-inline">
                   <?php foreach($markets as $market): ?>
-                    <li><span><?php echo $market['market_name']; ?> ?></span></li>
+                    <li><span><?php echo $market['market_name']; ?></span></li>
                   <?php endforeach; ?>
                 </ul>
             <?php endif; ?>
@@ -43,8 +43,9 @@
               </div>
               <?php if($i == $half_markets_count){ echo '</div><div class="col-sm-6">'; } ?>
             <?php $i++; endwhile; ?>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  <?php endif; ?>
 <?php get_footer(); ?>

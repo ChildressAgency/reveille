@@ -8,5 +8,4 @@
       </div>
     </div>
   </section>
-  <?php get_template_part('partials/contact_form', 'section'); ?>
 <?php get_footer(); ?>

@@ -13,7 +13,7 @@
     <div class="container container-sm-height">
       <div class="row row-sm-height">
         <div class="col-sm-2 col-sm-height footer-divider">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>?images/logo-small-white.png" class="img-responsive" alt="" />
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-small-white.png" class="img-responsive" alt="" />
         </div>
         <div class="col-sm-4 col-sm-height footer-divider">
           <div class="footer-nav">
@@ -32,8 +32,8 @@
           </div>
         </div>
         <div class="col-sm-3 col-sm-height footer-divider">
-          <p><a href="tel:<?php the_field('phone_number', 'option'); ?>"><strong><?php the_field('phone_number', 'option'); ?></strong></a></p>
-          <p><?php the_field('street_address', 'option'); ?><br /><?php the_field('address_2', 'option'); ?><br /><?php the_field('city_state_zip', 'option'); ?></p>
+          <p><a href="tel:<?php the_field('hq_phone_number', 'option'); ?>"><strong><?php the_field('hq_phone_number', 'option'); ?></strong></a></p>
+          <p><?php the_field('hq_address_1', 'option'); ?><br /><?php the_field('hq_address_2', 'option'); ?><br /><?php the_field('hq_city_state_zip', 'option'); ?></p>
         </div>
         <div class="col-sm-3 col-sm-height">
           <?php get_template_part('partials/social', 'section'); ?>

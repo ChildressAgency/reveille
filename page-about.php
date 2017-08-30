@@ -41,7 +41,7 @@
                 <span class="team-member-title"><?php the_sub_field('team_member_title'); ?></span>
               </a>
             </div>
-          <?php endwhile; endif; ?>
+          <?php $i++; endwhile; endif; ?>
         </div>
       </div>
     </div>
