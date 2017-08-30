@@ -58,7 +58,7 @@ function reveille_scripts(){
 add_action('wp_enqueue_scripts', 'reveille_styles');
 function reveille_styles(){
   wp_register_style('bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-  wp_regsiter_style('google-fonts', '//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Patua+One')
+  wp_register_style('google-fonts', '//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Patua+One');
   wp_register_style('reveille', get_template_directory_uri() . '/style.css');
   
   wp_enqueue_style('bootstrap-css');
@@ -315,7 +315,7 @@ function reveille_create_post_types(){
     'add_new_item' => 'Add New Case Study',
     'search_items' => 'Search Case Studies',
     'edit_item' => 'Edit Case Study',
-    'view_item' => 'View Case Study'
+    'view_item' => 'View Case Study',
     'all_items' => 'All Case Studies',
     'new_item' => 'New Case Study',
     'not_found' => 'Case Study Not Found'
