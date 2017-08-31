@@ -90,7 +90,7 @@
                   <p class="city"><?php echo $random_testimonial['testimonial_city']; ?></p>
                 </div>
                 <a href="<?php echo home_url('testimonials'); ?>" class="btn-main">View More</a>
-                <a href="<?php echo home_url('write-a-review'); ?>" class="btn-main">Write A Review</a>
+                <a href="<?php echo home_url('testimonials'); ?>" class="btn-main">Write A Review</a>
               </div>
             </div>
             <div class="col-sm-6 col-sm-height">
