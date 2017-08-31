@@ -26,7 +26,9 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-4 col-md-3">
-            <a href="#" class="radio-ad" data-toggle="modal" data-target="#radioAdModal" data-radio_ad="<?php the_field('radio_ad', 'option'); ?>">Listen to our radio ad!</a>
+            <?php if(get_field('radio_ad', 'option')): ?>
+              <a href="#" class="radio-ad" data-toggle="modal" data-target="#radioAdModal" data-radio_ad="<?php the_field('radio_ad', 'option'); ?>">Listen to our radio ad!</a>
+            <?php endif; ?>
           </div>
           <div class="col-sm-3 hidden-xs hidden-sm">
             <?php get_template_part('partials/social', 'section'); ?>

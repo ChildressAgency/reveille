@@ -101,7 +101,8 @@ img.alignright{
   padding-top:5px;
   padding-bottom:5px;
 }
-.radio-ad:hover{
+.radio-ad:hover,
+.radio-ad:focus{
   color:#fff;
   text-decoration:underline;
 }

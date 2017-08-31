@@ -453,12 +453,17 @@
   <div class="modal fade" id="radioAdModal" tab-index:"-1" role="dialog" aria-labelledby="radioAdTitle">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">X</span>
-        </button>
-        <video controls autoplay name="media" id="radioAd">
-          <source src="" type="audio/mpeg" />
-        </video>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+          <h3>The Reveille Systems Radio Ad</h3>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="radioAd" width="400" height="125"></iframe>
+          </div>
+        </div>
       </div>
     </div>
   </div>

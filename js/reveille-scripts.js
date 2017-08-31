@@ -6,10 +6,11 @@ jQuery(document).ready(function($){
     var radioAd = radioAdOpener.data('radio_ad');
 
     var modal = $(this);
-    modal.find('source').attr('src', radioAd);
+    modal.find('iframe#radioAd').attr('src', radioAd);
   });
+  //so the ad stops playing if modal is closed
   $('#radioAdModal').on('hidden.bs.modal', function(){
-    $('#radioAdModal').find('#radioAd>source').removeAttr('src');
+    $('#radioAdModal').find('iframe#radioAd').removeAttr('src');
   });
 
   // team member modal

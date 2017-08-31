@@ -1,5 +1,6 @@
 <?php
   $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+  $front_page_test = is_front_page() ? true : false;
   $wp_query = new WP_query(array('posts_per_page' => 5, 'paged' => $paged));
   if($wp_query->have_posts()): ?>
     <section id="hp-blog">
@@ -18,10 +19,10 @@
                 </li>
               <?php $t++; endwhile; ?>
             </ul>
-            <?php if(is_front_page()): ?>
-              <a href="<?php echo home_url('blog'); ?>" class="btn-main">View More</a>
-            <?php else: ?>
+            <?php if($front_page_test == false): ?>
               <?php wp_pagenavi(array('wp_query' => $wp_query)); ?>
+            <?php else: ?>
+              <a href="<?php echo home_url('blog'); ?>" class="btn-main">View More</a>
             <?php endif; ?>
           </div>
 
