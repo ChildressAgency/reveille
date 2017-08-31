@@ -2,7 +2,7 @@
 <section id="mainContent">
   <div class="container">
     <?php if(have_posts()): while(have_posts()): the_post(); ?>
-      <?php if(is_archive()): ?>
+      <?php if(is_archive() || is_search()): ?>
         <div class="loop-summary">
           <h3><?php the_title(); ?></h3>
           <span class="author"><?php the_author(); ?></span>

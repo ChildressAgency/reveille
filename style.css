@@ -774,6 +774,19 @@ footer a:hover{
   line-height:1em;
 }
 
+.loop-summary{
+  margin-bottom:25px;
+}
+.loop-summary>h3{
+  margin-bottom:0;
+}
+.loop-summary>.author{
+  font-weight:700;
+}
+.loop-summary>p{
+  margin-top:10px;
+}
+
 
 /* for radio ad modal - doesn't seem to help, consider removing */
 .modal.fade .modal-dialog {
